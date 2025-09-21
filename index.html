@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 class="loginTag"></h1>
+
+</body>
+
+<script>
+
+    const username = prompt("Enter your username");
+    const password = prompt("Enter your password");
+
+    const loginTag = document.querySelector(".loginTag");
+    loginTag.innerHTML = login(username, password);
+
+
+
+    function login(username, password){
+        return (username == "admin" && password == "secret") ? "Welcome admin!" : "BAD LOGIN CREDENTIALS";
+    }
+
+</script>
+</html>
